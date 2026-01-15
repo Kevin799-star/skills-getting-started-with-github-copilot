@@ -99,13 +99,25 @@ section h3 {
   gap: 8px;
 }
 
+/* remove decorative bullet */
 .participants-list li::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  background-color: #6b46c1;
-  border-radius: 50%;
-  display: inline-block;
+  display: none;
+}
+
+/* delete/unregister button inside participant pill */
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  padding: 2px 6px;
+  border-radius: 12px;
+}
+
+.delete-btn:hover {
+  background: rgba(198,40,40,0.08);
 }
 
 .participants-list .no-participants {
