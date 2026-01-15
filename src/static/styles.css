@@ -74,6 +74,60 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants {
+  margin-top: 10px;
+}
+
+.participants-list {
+  list-style: none;
+  margin: 8px 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.participants-list li {
+  background: linear-gradient(180deg, #ffffff, #f1f5ff);
+  border: 1px solid #e0e7ff;
+  color: #1a237e;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* remove decorative bullet */
+.participants-list li::before {
+  display: none;
+}
+
+/* delete/unregister button inside participant pill */
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  padding: 2px 6px;
+  border-radius: 12px;
+}
+
+.delete-btn:hover {
+  background: rgba(198,40,40,0.08);
+}
+
+.participants-list .no-participants {
+  background: transparent;
+  border: none;
+  color: #666;
+  padding: 0;
+  font-style: italic;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
